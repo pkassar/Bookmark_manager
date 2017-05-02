@@ -16,7 +16,8 @@
 # users commonly want.
 #
 # See http://rubydoc.info/gems/rspec-core/RSpec/Core/Configuration
-require './app.rb'
+require './app/app.rb'
+require './app/models/link.rb'
 require 'dm-rspec'
 require 'capybara/rspec'
 require 'capybara'
