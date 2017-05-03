@@ -12,6 +12,6 @@ gem 'selenium-webdriver'
 
 gem 'data_mapper'
 gem 'dm-postgres-adapter'
-gem 'dm-rspec'
 # gem 'dm-mysql-adapter'
+gem 'dm-rspec'
 gem 'dm-migrations'
