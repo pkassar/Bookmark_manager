@@ -16,24 +16,24 @@
 # users commonly want.
 #
 # See http://rubydoc.info/gems/rspec-core/RSpec/Core/Configuration
+ENV['RACK_ENV'] = 'test'
 require './app/app.rb'
 require './app/models/link.rb'
 require 'dm-rspec'
 require 'capybara/rspec'
 require 'capybara'
 require 'rspec'
+require 'database_cleaner'
 
 # gem 'data_mapper'
 # gem 'dm-postgres-adapter'
 # gem 'dm-rspec'
 
-ENV['RACK_ENV'] = 'test'
 
 Capybara.app = BookmarkManager
 
 
 
-require 'database_cleaner'
 
 
 
