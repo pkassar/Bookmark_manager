@@ -3,6 +3,6 @@ feature 'Form for new links' do
     visit '/links/new'
     fill_in('title', with: 'makers' )
     fill_in('url', with: 'makersacademy.com' )
-    click_button('new link')
+    click_button('create link')
   end
 end
