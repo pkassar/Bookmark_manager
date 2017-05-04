@@ -3,6 +3,7 @@ GEM
   specs:
     addressable (2.5.1)
       public_suffix (~> 2.0, >= 2.0.2)
+    ast (2.3.0)
     bcrypt (3.1.11)
     bcrypt-ruby (3.1.5)
       bcrypt (>= 3.1.3)
@@ -79,12 +80,17 @@ GEM
     multi_json (1.12.1)
     nokogiri (1.7.1)
       mini_portile2 (~> 2.1.0)
+    parser (2.4.0.0)
+      ast (~> 2.2)
+    powerpack (0.1.1)
     public_suffix (2.0.5)
     rack (1.6.5)
     rack-protection (1.5.3)
       rack
     rack-test (0.6.3)
       rack (>= 1.0)
+    rainbow (2.2.2)
+      rake
     rake (12.0.0)
     rspec (3.5.0)
       rspec-core (~> 3.5.0)
@@ -99,6 +105,13 @@ GEM
       diff-lcs (>= 1.2.0, < 2.0)
       rspec-support (~> 3.5.0)
     rspec-support (3.5.0)
+    rubocop (0.48.1)
+      parser (>= 2.3.3.1, < 3.0)
+      powerpack (~> 0.1)
+      rainbow (>= 1.99.1, < 3.0)
+      ruby-progressbar (~> 1.7)
+      unicode-display_width (~> 1.0, >= 1.0.1)
+    ruby-progressbar (1.8.1)
     rubyzip (1.2.1)
     selenium-webdriver (3.4.0)
       childprocess (~> 0.5)
@@ -110,6 +123,7 @@ GEM
       tilt (>= 1.3, < 3)
     stringex (1.5.1)
     tilt (2.0.7)
+    unicode-display_width (1.2.1)
     uuidtools (2.1.5)
     websocket (1.2.4)
     xpath (2.0.0)
@@ -127,6 +141,7 @@ DEPENDENCIES
   dm-rspec
   rake
   rspec
+  rubocop
   selenium-webdriver
   sinatra
 

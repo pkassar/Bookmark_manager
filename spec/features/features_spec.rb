@@ -15,7 +15,9 @@ feature 'Organise links' do
     click_button('new link')
     new_link_makers
     link = Link.all.first
-    expect(link.tags[0].name).to include('learning')
+    # p link
+    # p link.tags.map(&:name)
+    expect(link.tags.map(&:name)).to include('learning')
   end
 end
 
@@ -31,7 +33,7 @@ end
 feature 'Adding multiple tags' do
   scenario 'I can add more than one tag at the creation of a bookmark' do
     new_link_cola_multiple_tags
-    link = Link.all.first
-    expect(link.tags[0].name).to include('bubbles, beverage')
+    link = Link.first
+    expect(link.tags.map(&:name)).to include('bubbles', 'beverage')
   end
 end
