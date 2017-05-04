@@ -17,5 +17,7 @@ feature 'Organise links' do
     fill_in('url', with: 'makersacademy.com')
     fill_in('tag', with: 'learning')
     click_button('create link')
+    link = Link.all.first
+    expect(link.tags[0].name).to include('learning')
   end
 end
