@@ -25,6 +25,7 @@ require 'capybara'
 require 'rspec'
 require 'database_cleaner'
 
+require 'features/web_helper'
 # gem 'data_mapper'
 # gem 'dm-postgres-adapter'
 # gem 'dm-rspec'
